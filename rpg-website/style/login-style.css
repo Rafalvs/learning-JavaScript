@@ -1,0 +1,218 @@
+/* https://codepen.io/Rafalvs/pen/gOEMgaB */
+
+* {
+    font-family: Baskerville, serif; 
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+    /* HEADER */
+
+                
+.navigation {
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+    background-color: #38271d;
+    padding: 10px 10px;
+    border: 4px solid black;
+    width: 100%;
+    height: 140px;
+    z-index: 10;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: white;
+}
+
+
+/*design dos botões*/
+.nav-right a {
+    border: 2px solid transparent;
+    padding: 12px;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+
+/*elementos na esquerda*/ 
+.logo {
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+/*elementos na direita*/
+.nav-right {
+    float: right;
+    position: relative;
+    top: 45px;
+}
+
+.search {
+    float: left;
+    position: relative;
+    bottom: 8px;
+    left: 20px;
+}
+
+.search input {
+    color: white;
+    background-color: #38271d;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 6px;
+    height: 40px;
+    width: 300px;
+}
+
+.search input:hover {
+    background-color: black;
+}
+
+.search input:focus {
+    color: white;
+    background-color: black;
+}
+
+.sbutton {
+    float: right;
+    position: relative;
+    left: -37px;
+    background-image: url(https://static.thenounproject.com/png/128583-200.png);
+    background-size: 100%;
+    background-color: #38271d;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 17px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.sbutton:hover {
+    background-color: #2e2119;
+}
+
+    
+    /*BODY*/
+
+
+body {
+        background-color: black;
+        margin: 0 auto;
+    }
+
+#banner {
+    background-image: url(https://imgur.com/m6C4so8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 100px;
+    height: 800px;
+    max-width: 100%;
+    z-index: -2;
+}
+    
+/*caixa central*/
+.box {
+    position: relative;
+    top: 24px;
+    text-align: center;
+    border: 4px solid black;
+    background-color: #38271d;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 220px;
+    left: 546px;
+    border-radius: 8px;
+}
+
+.box .forms {
+    position: relative;
+    top: 24px;
+}
+
+.box img {
+    width: 160px;
+    position: relative;
+    top: 30px;
+}
+
+.box h1, a {
+    text-shadow: 2px 2px black;
+    color: white;
+}
+
+.box a {
+    display: block;
+    margin-top: 24px;
+    margin-left: 34%;
+    margin-right: 34%;
+    font-size: large;
+}
+
+label {
+    color: white;
+}
+
+input {
+    border: 1px solid black;
+    outline: none;
+}
+
+input:hover, input:focus {
+    background-color: rgb(206, 206, 206);
+}
+
+
+    /*FOOTER*/
+
+
+.footer {
+    background-color: #38271c;
+    height: 100px;
+    width: 100%;
+    padding: 3px 10px;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.footer h1 a {
+    float: left;
+    margin-right: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: large;
+    color: #5a6fc0;
+    border: 2px solid black;
+    text-shadow: 3px 2px black; 
+    padding: 10px 10px;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+
+.footer h1 a:hover {
+    background-color: black;
+}
+
+#socials {
+    color: #8c61ca;
+}
+
+#app {
+    color: #974cc3;
+}

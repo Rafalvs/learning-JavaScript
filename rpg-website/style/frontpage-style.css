@@ -1,0 +1,514 @@
+/* https://codepen.io/Rafalvs/pen/BabKKGM */
+
+* {
+    font-family: Baskerville, serif; 
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+    /* HEADER */
+
+                
+.navigation {
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+    background-color: #38271d;
+    padding: 10px 10px;
+    border: 4px solid black;
+    width: 100%;
+    height: 140px;
+    z-index: 10;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: white;
+}
+
+
+/*design dos botões*/
+.nav-right a {
+    border: 2px solid black;
+    padding: 12px;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.nav-right a:hover{                
+    background-color: black;
+}
+
+
+/*elementos na esquerda*/ 
+.logo {
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+/*botão escondido*/
+.left:hover .overlay {
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    right: 0;
+    height: 124px;
+    width: 560px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #38271d;
+  }
+
+#d20 {
+    color: white;
+    text-shadow: 2px 1px black;
+    font-size: 40px;
+    position: absolute;
+    left: 266px;
+    top: 58px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+}
+
+#d20:hover {
+    color: rgb(204, 204, 204);
+    text-shadow: 2px 1px black;
+}
+
+/*elementos na direita*/
+.nav-right {
+    float: right;
+    position: relative;
+    top: 45px;
+}
+
+.search {
+    float: left;
+    position: relative;
+    bottom: 8px;
+    left: 20px;
+}
+
+.search input {
+    color: white;
+    background-color: #38271d;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 6px;
+    height: 40px;
+    width: 300px;
+}
+
+.search input:hover {
+    background-color: black;
+}
+
+.search input:focus {
+    color: white;
+    background-color: black;
+}
+
+.sbutton {
+    float: right;
+    position: relative;
+    left: -37px;
+    background-image: url(https://static.thenounproject.com/png/128583-200.png);
+    background-size: 100%;
+    background-color: #38271d;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 17px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.sbutton:hover {
+    background-color: #2e2119;
+}
+
+/*cores dos botões*/
+
+#login {
+    color: #974cc3;
+    text-shadow: 3px 2px black;
+}
+    
+#register {
+    color: #5a6fc0;
+    text-shadow: 3px 2px black;
+}
+
+    
+/* BODY */
+
+
+body {
+    background-color: black;
+    margin: 0 auto;
+}
+
+#banner {
+    background-image: url(https://imgur.com/4yu8lP7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -900px 100px;
+    height: 1000px;
+    max-width: 100%;
+    z-index: -2;
+}
+
+/*barra superior*/
+.bar {
+    width: 1426px;
+    height: 72px;
+    border: 4px solid black;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    top: 174px;
+    left: 6%;
+    z-index: 1;
+}
+
+.bar a {
+    width: 138px;
+    height: 64px;
+    border: 2px solid #974cc3;
+    background-color: #38271d;
+    display: inline-block;
+    text-align: center;
+}
+
+.bar a:hover {
+    background-color: black;
+}
+
+.bar h3 {
+    text-shadow: 3px 2px black;
+}
+
+
+/*posição default das caixas*/
+.boxes {
+    position: absolute;
+    top: 23%;
+}
+
+
+/*caixa única*/
+.bigbox {
+    border: 4px solid transparent;
+    float: left;
+    width: 240px;
+    height: 400px;
+    margin: 25px;
+    position: relative;
+    left: 20px;
+    top: 120px;
+    display: block;
+    text-align: center;
+}
+
+.bigbox .art{
+    background-image: url(https://imgur.com/rwDa4Ne.jpg);
+    background-size: cover;
+    background-position: -20px 0px;
+    height: 600px;
+    width: 300px;
+    border: 2px solid black;
+    position: relative;
+    top: -66px;
+    right: 20px;
+    -webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.art:hover{
+    transform: scale(1);
+}
+
+.art h2 {
+    border: 1px solid transparent;
+    position: relative;
+    top: -35px;
+    right: 2px;
+    width: 300px;
+    height: 600px;
+    color: white;
+    opacity: 0;
+    text-shadow: 3px 2px black;
+    font-size: 40px;
+    transition: .3s ease;
+}
+
+.art h2:hover {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+/*outras caixas*/
+.box {
+    float: right;
+    border: 2px solid black;
+    height: 180px;
+    width: 380px;
+    text-align: left;
+    position: relative;
+    top: 106px;
+    right: 50px;
+    margin: 2px;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.box:hover {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+
+/*definindo os textos*/
+.box h1 {
+    position: relative;
+    top: -24px;
+    right: 3px;
+    color: white;
+    text-shadow: 2px 1px black;
+    border: 1px solid black;
+    width: 20px;
+    height: 42px;
+}
+
+.box h3 {
+    position: relative;
+    top: 27px;
+    left: 2px;
+    border: 1px solid black;
+    text-shadow: 2px 1px black;
+    height: 48px;
+    width: 381px;
+    float: right;
+}
+
+
+/* keyframes test 
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+*/
+
+/*caixa por caixa*/
+#shop .box {
+    background-image: url(https://i.imgur.com/A3eTtoq.png);
+    background-size: 800px;
+    /*
+        background-repeat: repeat-x;
+        animation: animatedBackground 30s linear infinite alternate;
+    */
+}
+
+#shop h1 {
+    background-color: #830a0a;
+    width: 66px;
+}
+
+#shop h3 {
+    background-color: #830a0a;
+}
+
+
+#news .box {
+    background-image: url(https://imgur.com/i3RE3Il.jpg);
+    background-size: 380px;
+    background-position: 0px -170px;
+}
+
+#news h1 {
+    background-color: #0c63bd;
+    width: 113px;
+}
+
+#news h3 {
+    background-color: #0c63bd;
+}
+
+
+#community .box {
+    background-image: url(https://imgur.com/V0lp7A1.jpg);
+    background-size: 500px;
+    background-position: -120px -40px;
+}
+
+#community h1 {
+    background-color: rgb(216, 66, 12);
+    width: 180px;
+}
+
+#community h3 {
+    background-color: rgb(216, 66, 12);
+}
+
+
+#games .box {
+    background-image: url(https://imgur.com/uspBNte.jpg);
+    background-size: 400px;
+    background-position: -15px -90px;
+}
+
+#games h1 {
+    background-color: #38271c;
+    width: 80px;
+}
+
+#games h3 {
+    background-color: #38271c;
+}
+
+
+#music .box {
+    background-image: url(https://imgur.com/828OFXf.jpg);
+    background-size: 380px;
+    background-position: 0px -5px;
+}
+
+#music h1 {
+    background-color: #ffbb00ec;
+    width: 102px;
+}
+
+#music h3 {
+    background-color: #ffbb00ec;
+}
+
+
+#guides .box {
+    background-image: url(https://imgur.com/CVxUHk2.jpg);
+    background-size: 420px;
+    background-position: 0px -95px;
+}
+
+#guides h1 {
+    background-color: rgb(11, 206, 115);
+    width: 84px;
+}
+
+#guides h3 {
+    background-color: rgb(11, 206, 115);
+}
+
+
+#arcana .box {
+    background-image: url(https://imgur.com/JkGUawM.jpg);
+    background-size: 430px;
+    background-position: 0px -50px;
+}
+
+#arcana h1 {
+    width: 248px;
+    background-color: #9435c7;
+}
+
+#arcana h3 {
+    background-color: #9435c7;
+}
+
+
+#beasts .box {
+    background-image: url(https://imgur.com/2LqkdSu.jpg);
+    background-size: 400px;
+    background-position: -10px -310px;
+}
+
+#beasts h1 {
+    width: 126px;
+    background-color: black;
+}
+
+#beasts h3 {
+    background-color: black;
+}
+
+
+#pop .box {
+    background-image: url(https://imgur.com/52j2dGe.jpg);
+    background-size: 380px;
+    background-position: 0px -30px;
+}
+
+#pop h1 {
+    background-color: rgb(77, 77, 77);
+    width: 172px;
+}
+
+#pop h3 {
+    background-color: rgb(77, 77, 77);
+}
+
+
+    /*FOOTER*/
+
+
+.footer {
+    background-color: #38271c;
+    height: 100px;
+    width: 100%;
+    padding: 3px 10px;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.footer h1 a {
+    float: left;
+    margin-right: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: large;
+    color: #5a6fc0;
+    border: 2px solid black;
+    text-shadow: 3px 2px black; 
+    padding: 10px 10px;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+
+.footer h1 a:hover {
+    background-color: black;
+}
+
+#socials {
+    color: #8c61ca;
+}
+
+#app {
+    color: #974cc3;
+}

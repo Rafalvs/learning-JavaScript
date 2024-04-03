@@ -1,0 +1,45 @@
+* {
+    background-color: tan;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: inline;
+    justify-content: center;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 80px);
+  grid-template-rows: repeat(8, 80px);
+  border: solid black 1px;
+  width: fit-content;
+  text-align: center;
+}
+
+.cell {
+  width: 100%;
+  height: 100%;
+}
+
+.white {
+  background-color: #f0d9b5;
+}
+
+.black {
+  background-color: #b58863;
+}
+
+#letters {
+    font-size: 560%;
+    border: solid black 1px;
+}

@@ -1,0 +1,118 @@
+/* https://codepen.io/Rafalvs/pen/OJqOwdL */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, black, white);
+    background-image: url(https://c.wallhere.com/photos/ed/99/Pok_mon_Christmas_holiday_Pikachu_Eevee-90821.png!d);
+    background-position: center;
+}
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+.caixa {
+    background-color: white;
+    border: 4px solid red;
+    height: 500px;
+    width: 100%;
+    min-width: 200px;
+    border-radius: 12px;
+    padding: 4%;
+    background-image: url(https://i.pinimg.com/736x/2e/62/7a/2e627ab328d8a7975104fd7a241d269b.jpg);
+    background-size: 200%;
+}
+
+.form {
+    width: 75%;
+    background-color: black;
+    position: absolute;
+    top: 68%;
+}
+
+input:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.input__search {
+    width: 100%;
+    padding: 3%;
+    outline: none;
+    border: 2px solid black;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: 2px 2px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 23%;
+    display: flex;
+}
+
+.button {
+    border: 2px solid black;
+    padding: 0% 10%;
+    font-size: 110%;
+    box-shadow: 2px 2px;
+    margin: 4% 8%;
+}
+
+.button:active {
+    box-shadow: inset 2px 2px 0 black;
+    font-size: 0.9rem;
+  }
+
+.button:hover {
+    cursor: pointer;
+}
+
+.pokemon__image {
+    border-radius: 10%;
+    position: absolute;
+    bottom: 48%;
+    left: 25%;
+    transform: translate(20%, 50%);
+    height: 14%;
+    width: 36%;
+}
+
+.pokemon__name {
+    text-transform: capitalize;
+}
+
+.pokemon__data {
+    margin-top: 14%;
+    margin-bottom: 20%;
+}
+
+h1 {
+    border: 4px solid black;
+    background-color: white;
+    box-shadow: 2px 2px;
+}
+
+h2 {
+    border: 2px solid black;
+    background-color: white;
+    box-shadow: 2px 2px;
+}
+
+.pokemon__types {
+    border: 2px solid black;
+    background-color: white;
+    box-shadow: 2px 2px;
+}
