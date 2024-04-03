@@ -38,19 +38,10 @@ The Rise of Tiamat - Cover Art - D&D 5E Book - by Tyler Jacobson
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  Agora sobre o código...
- Eu simplesmente queria fazer qualquer coisinha de brincadeira, peguei RPG que é algo que eu amo muito e inventei um site. CSS não é meu forte,
-por isso o site tá todo mal formatado (e o código horroroso), não fiz ele responsivo (nem pra mobile), só queria uma desculpa boa pra brincar
-com javascript. Na parte debaixo das caixas da frontpage tem um buracão, ignora ele, deixei ali só para caso queira adicionar mais coisa no futuro.
+ Eu simplesmente queria fazer qualquer coisinha de brincadeira pra mexer com JavaScript cru, inventei um site de RPG. CSS ainda não é meu forte, por isso ignore, fiz em um dia, tá zero responsivo e só fica bonito na minha tela: https://i.imgur.com/vJ4knva.png
+já no mobile kkkkkkkkkk deus me livre
+Na parte debaixo das caixas da frontpage tem um buracão, ignora ele, deixei ali só para caso queira adicionar mais coisa no futuro.
 Fiz um botão escondido que rola um D20, ia colocar esse botão nas outras páginas também, mas mantive só na principal, pq senão teria que repetir
-a função em todos .js (que seria má prática), ou mexer com NPM pra criar uma biblioteca, que não tava com muito ânimo pra isso. Depois fiz um
+a função em todos .js (que seria má prática), ou mexer com NPM, que não tava com muito ânimo pra isso. Depois fiz um
 validador de email simples, outro pro username e uma função pra verificar se as senhas batem.
  O objetivo como sempre é aprender novas coisas, pros próximos projetos aumentarem o grau de dificuldade e complexidade, só bora.
-
- Now bout the code...
- I was wanting to make something silly, just for fun, took RPG that is a topic i love much, then made up a website. CSS is not my strengh,
-you can see this with my bad looking code and formating, hes not very responsive (neither mobile), just wanted a excuse to play with some javascript.
-Below the boxes in frontpage theres a huge gap, pls ignore, i left that only in case i want to add new stuff in future. With JS i made a hidden
-button that rolls a D20, i gave up putting the button in other pages, kept him only in frontpage, cause else i would repeat the same function
-on different files (thats definitively not good pratices), or dealing with NPM to create a lib, that i wasnt in the vibe. Then i did a simple
-email validator, another one for username and then a function to verify if the passwords where matching.
- My objective as always is to learn new stuff, so next projects will be more harder and complex, like whats up danger.
