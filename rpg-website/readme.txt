@@ -1,20 +1,3 @@
-Primeiro sobre as imagens (depois falo do código);
-First about the images (then i talk about the code):
-
- Todas imagens utilizadas (com exceção da logo) não foram criadas por mim e não detenho direitos,
-coloquei elas no meu perfil pessoal do imgur como privadas/ocultas e utilizo-as sem fins lucrativos.
-Servem apenas ao meu aprendizado em CSS, mais abaixo irei creditar os artistas com todos links para as obras originais.
-Reforço ainda que se algum dos artistas desejar que eu retire ou não use sua arte, peço que entrem em contato no meu email abaixo,
-assim farei a remoção imediata.
-
- All images used (with the exception of the logo) were not created by me and I do not hold the rights,
-I put them on my personal imgur profile as private/hidden and I use them for non-profit purposes.
-They only serve my learning in CSS, below i will credit the artists with all links to the original works.
-I would also like to reinforce that if any of the artists would like me to remove or not use their art,
-I ask that they contact me at my email below, so I will remove it immediately.
-​
-Email: rafaelalvessantana0401@gmail.com
-
 Links/Credit for original arts:
 
 https://www.deviantart.com/rhasdra/art/Orko-559125813 - Orko by Rhasdra
@@ -35,7 +18,7 @@ Tasha's Cauldron of Everything - Cover Art - D&D 5E Book - by Magali Villeneuve
 Tasha's Cauldron of Everything - Page 5 Art - D&D 5E Book - by 
 The Rise of Tiamat - Cover Art - D&D 5E Book - by Tyler Jacobson
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  Agora sobre o código...
  Eu simplesmente queria fazer qualquer coisinha de brincadeira pra mexer com JavaScript cru, inventei um site de RPG. CSS ainda não é meu forte, por isso ignore, fiz em um dia, tá zero responsivo e só fica bonito na minha tela: https://i.imgur.com/vJ4knva.png
