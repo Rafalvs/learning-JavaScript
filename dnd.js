@@ -1,10 +1,12 @@
-let ficha =
+const prompt = require('prompt-sync')();
+
+let sheet =
 {
     'Name': 'Baern',
     'Race': 'Orc',
     'Class': 'Ranger',
     'Level': 12,
-    'Strength': '',
+    'Strength': 18,
     'Dexterity': 14,
     'Constitution': 16,
     'Intelligence': 8,
@@ -27,17 +29,22 @@ function d20 ()
 
 module.exports.d20 = d20;
 
-/* let forca = console.log(prompt("digite a força do seu personagem: \n"));
-força = ficha.Strength;
+console.log(`object value before: ${sheet.Strength}`);
+let newStrength = prompt("Enter a new strength value: ");
+sheet['Strength'] = parseInt(newStrength);
+console.log(`object value after: ${sheet.Strength}`);
 
-let strMod = modifier(ficha.Strength);
-let dexMod = modifier(ficha.Dexterity);
-let conMod = modifier(ficha.Constitution);
-let intMod = modifier(ficha.Intelligence);
-let wisMod = modifier(ficha.Wisdom);
-let chaMod = modifier(ficha.Charisma);
+let strMod = modifier(sheet.Strength);
 
-console.log(strMod);
-console.log(d20());
- */
-//, dexMod, conMod, intMod, wisMod, chaMod
+/* 
+let dexMod = modifier(sheet.Dexterity);
+let conMod = modifier(sheet.Constitution);
+let intMod = modifier(sheet.Intelligence);
+let wisMod = modifier(sheet.Wisdom);
+let chaMod = modifier(sheet.Charisma);
+*/
+
+console.log(`your strength modifier is: ${strMod}`);
+//console.log(d20());
+
+//, dexMod, conMod, intMod, wisMod, chaMod */
