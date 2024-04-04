@@ -25,7 +25,9 @@ function d20 ()
     return p;
 }
 
-let forca = console.log(prompt("digite a força do seu personagem: \n"));
+module.exports.d20 = d20;
+
+/* let forca = console.log(prompt("digite a força do seu personagem: \n"));
 força = ficha.Strength;
 
 let strMod = modifier(ficha.Strength);
@@ -37,5 +39,5 @@ let chaMod = modifier(ficha.Charisma);
 
 console.log(strMod);
 console.log(d20());
-
+ */
 //, dexMod, conMod, intMod, wisMod, chaMod
