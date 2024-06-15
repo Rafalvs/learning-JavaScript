@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    <title>IMC Calc</title>
+</head>
+<body>
+    <h1> IMC CALCULATOR </h1>
+    <form action="" method="POST" id="formz">
+        <div class="form-group">
+            <label for="height">Height: </label>
+            <input 
+                type="number"
+                step="0.01"
+                min="0.0"
+                max="2.50"
+                name="height"
+                id="height"
+                class="input"
+                required
+            />
+        </div>
+        <div class="form-group">
+            <label for="weight">Weight: </label>
+            <input 
+                type="number"
+                step="0.01"
+                min="0.0"
+                max="500.0"
+                name="weight"
+                id="weight"
+                class="input"
+                required
+            />
+        </div>
+
+        <div class="form-group">
+            <button
+                type="submit"
+                class="btn"
+                id="send">
+                Send
+            </button>
+        </div>
+        <div class="form-group">
+            <button
+                type="submit"
+                class="btn"
+                id="clear">
+                Clear
+            </button>
+        </div>
+
+        <div class="form-group">
+            <label for="imc"></label>
+            <input
+                type="number"
+                name="imc"
+                id="result"
+                class="input"
+                value="0.0"
+                disabled
+            />
+            <span id="warning"></span>
+        </div>
+    </form>
+</body>
+
+<script src="./imc-script.js"></script>
+
+</html>
